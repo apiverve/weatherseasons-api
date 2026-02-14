@@ -1,33 +1,34 @@
 openapi: 3.0.4
 info:
   title: Weather Seasons
-  description: Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.
+  description: >-
+    Weather Seasons is a simple tool for getting the dates of the solstice and
+    equinox. It returns the dates of the solstice and equinox for a given year.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/weatherseasons:
     get:
       summary: Get Dates of Solstice and Equinox
-      description: Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.
+      description: Get the dates of the solstice and equinox for a given year
       operationId: weatherseasons
       parameters:
-      - name: year
-        default: '2025'
-        in: query
-        schema:
-          type: integer
-        required: false
-        description: The year to get the dates of the solstice and equinox
-        example: '2024'
+        - name: year
+          in: query
+          schema:
+            type: integer
+          required: false
+          description: The year to get the dates of the solstice and equinox
+          example: 2024
       responses:
         '200':
           description: Successful Response
@@ -43,24 +44,24 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   year: 2024
                   timezone: UTC
-                  march_equinox: 2024-03-20 03:06:24
-                  june_solstice: 2024-06-20 20:50:58
-                  september_equinox: 2024-09-22 12:43:55
-                  december_solstice: 2024-12-21 09:20:18
+                  march_equinox: '2024-03-20 03:06:24'
+                  june_solstice: '2024-06-20 20:50:58'
+                  september_equinox: '2024-09-22 12:43:55'
+                  december_solstice: '2024-12-21 09:20:18'
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -68,4 +69,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
