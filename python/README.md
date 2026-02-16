@@ -221,8 +221,9 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient
 
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]")
 
+query = { "year": 2025 }
+
 try:
-    query = { "year": 2025 }
     result = api.execute(query)
     print(result)
 finally:
