@@ -30,7 +30,11 @@ The Weather Seasons API provides a simple, reliable way to integrate weather sea
 ```javascript
 async function callWeatherSeasonsAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/weatherseasons', {
+        const params = new URLSearchParams({
+            year: 2024
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/weatherseasons?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callWeatherSeasonsAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/weatherseasons?param=value" \
+curl -X GET "https://api.apiverve.com/v1/weatherseasons?year=2024" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/weatherseasons-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/weatherseasons-api/go
 The Weather Seasons API is commonly used for:
 
 - **Web Applications** - Add weather seasons features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with weather seasons capabilities
 - **Data Pipelines** - Process and analyze data at scale
