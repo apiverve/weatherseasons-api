@@ -14,6 +14,6 @@ namespace APIVerve.API.WeatherSeasons
         /// The year to get the dates of the solstice and equinox
         /// </summary>
         [JsonProperty("year")]
-        public string Year { get; set; }
+        public int? Year { get; set; }
     }
 }
