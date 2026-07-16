@@ -25,26 +25,41 @@ namespace APIVerve.API.WeatherSeasons
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("year")]
-        public long Year { get; set; }
+        public long? Year { get; set; }
 
         [JsonProperty("timezone")]
         public string Timezone { get; set; }
 
         [JsonProperty("march_equinox")]
-        public DateTimeOffset MarchEquinox { get; set; }
+        public DateTimeOffset? MarchEquinox { get; set; }
 
         [JsonProperty("june_solstice")]
-        public DateTimeOffset JuneSolstice { get; set; }
+        public DateTimeOffset? JuneSolstice { get; set; }
 
         [JsonProperty("september_equinox")]
-        public DateTimeOffset SeptemberEquinox { get; set; }
+        public DateTimeOffset? SeptemberEquinox { get; set; }
 
         [JsonProperty("december_solstice")]
-        public DateTimeOffset DecemberSolstice { get; set; }
+        public DateTimeOffset? DecemberSolstice { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
