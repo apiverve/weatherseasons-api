@@ -1,13 +1,12 @@
 Weather Seasons API
 ============
 
-Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.
+Weather Seasons calculates astronomical solstice and equinox dates for any target year. It provides exact timestamps and reference timezones for the March and September equinoxes and the June and December solstices.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-weatherseasons.svg)](https://pypi.org/project/apiverve-weatherseasons/)
+
+This is a Python wrapper for the [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-weatherseasons
 
 ## Configuration
 
-Before using the weatherseasons API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Weather Seasons API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Weather Seasons API documentation is found here: [https://docs.apiverve.com/ref/weatherseasons](https://docs.apiverve.com/ref/weatherseasons?utm_source=pypi&utm_medium=readme).
+The Weather Seasons API documentation is found here: [https://docs.apiverve.com/ref/weatherseasons](https://docs.apiverve.com/ref/weatherseasons?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -235,7 +234,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -246,12 +245,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
