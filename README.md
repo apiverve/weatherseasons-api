@@ -1,13 +1,13 @@
-# [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Weather Seasons is a simple tool for getting the dates of the solstice and equinox. It returns the dates of the solstice and equinox for a given year.
+Weather Seasons calculates astronomical solstice and equinox dates for any target year. It provides exact timestamps and reference timezones for the March and September equinoxes and the June and December solstices.
 
 The Weather Seasons API provides a simple, reliable way to integrate weather seasons functionality into your applications. Built for developers who need production-ready weather seasons capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/weatherseasons-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/weatherseasons](https://docs.apiverve.com/ref/weatherseasons)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -191,11 +191,33 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Weather Seasons API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "year": 2024,
+    "timezone": "UTC",
+    "march_equinox": "2024-03-20 03:06:24",
+    "june_solstice": "2024-06-20 20:50:58",
+    "september_equinox": "2024-09-22 12:43:55",
+    "december_solstice": "2024-12-21 09:20:18"
+  }
 }
 ```
 
@@ -203,7 +225,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Weather Seasons API](https://apiverve.com/marketplace/weatherseasons?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

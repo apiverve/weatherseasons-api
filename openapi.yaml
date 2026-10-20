@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Weather Seasons
   description: >-
-    Weather Seasons is a simple tool for getting the dates of the solstice and
-    equinox. It returns the dates of the solstice and equinox for a given year.
+    Weather Seasons calculates astronomical solstice and equinox dates for any
+    target year. It provides exact timestamps and reference timezones for the
+    March and September equinoxes and the June and December solstices.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/weatherseasons:
     get:
-      summary: Get Dates of Solstice and Equinox
+      summary: Weather Seasons
       description: Get the dates of the solstice and equinox for a given year
       operationId: weatherseasons
       parameters:
