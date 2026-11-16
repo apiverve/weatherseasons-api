@@ -43,7 +43,7 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient
 # Initialize the client with your APIVerve API key
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]")
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 try:
     # Make the API call
@@ -81,7 +81,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "year": 2025 }
+query = { "year": 2024 }
 ```
 
 ###### Simple Request
@@ -124,7 +124,7 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient, Weatherse
 
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]")
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 try:
     result = api.execute(query)
@@ -145,7 +145,7 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient, Weatherse
 
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]")
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 try:
     result = api.execute(query)
@@ -179,7 +179,7 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient, WeatherseasonsAPIClientError
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 # Using context manager ensures proper cleanup
 with WeatherseasonsAPIClient("[YOUR_API_KEY]") as api:
@@ -205,7 +205,7 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient
 # Enable debug mode
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -220,7 +220,7 @@ from apiverve_weatherseasons.apiClient import WeatherseasonsAPIClient
 
 api = WeatherseasonsAPIClient("[YOUR_API_KEY]")
 
-query = { "year": 2025 }
+query = { "year": 2024 }
 
 try:
     result = api.execute(query)

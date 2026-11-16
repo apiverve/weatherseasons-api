@@ -24,7 +24,7 @@ class ValidationError(WeatherseasonsAPIClientError):
 class WeatherseasonsAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "year": {"type": "integer", "required": False, "min": 1900, "max": 2100, "default": 2025}
+        "year": {"type": "integer", "required": False, "min": 1900, "max": 2100}
     }
 
     # Format validation patterns
