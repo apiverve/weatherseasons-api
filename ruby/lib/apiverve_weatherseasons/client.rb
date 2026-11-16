@@ -10,7 +10,7 @@ module APIVerve
     #
     # @example Basic usage
     #   client = APIVerve::Weatherseasons::Client.new(api_key: "your_api_key")
-    #   response = client.execute({ year: 2025 })
+    #   response = client.execute({ year: 2024 })
     #   puts response
     #
     # @see https://apiverve.com/marketplace/weatherseasons?utm_source=ruby&utm_medium=referral&utm_content=readme

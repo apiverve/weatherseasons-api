@@ -35,7 +35,7 @@ require 'apiverve_weatherseasons'
 client = APIVerve::Weatherseasons::Client.new(api_key: "YOUR_API_KEY")
 
 # Make a request
-response = client.execute({ year: 2025 })
+response = client.execute({ year: 2024 })
 
 # Print the response
 puts response
@@ -46,7 +46,7 @@ puts response
 
 ```ruby
 begin
-  response = client.execute({ year: 2025 })
+  response = client.execute({ year: 2024 })
   puts response["data"]
 rescue APIVerve::Weatherseasons::ValidationError => e
   puts "Validation error: #{e.errors.join(', ')}"
