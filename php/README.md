@@ -27,7 +27,7 @@ use APIVerve\Weatherseasons\Client;
 $client = new Client('YOUR_API_KEY');
 
 // Make a request
-$response = $client->execute(['year' => 2025]);
+$response = $client->execute(['year' => 2024]);
 
 // Print the response
 print_r($response);
@@ -42,7 +42,7 @@ use APIVerve\Weatherseasons\Exceptions\APIException;
 use APIVerve\Weatherseasons\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['year' => 2025]);
+    $response = $client->execute(['year' => 2024]);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());

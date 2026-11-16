@@ -15,7 +15,7 @@ use APIVerve\Weatherseasons\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['year' => 2025]);
+ * $response = $client->execute(['year' => 2024]);
  * print_r($response);
  * ```
  *
