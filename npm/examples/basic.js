@@ -15,7 +15,7 @@ const api = new weatherseasonsAPI({
 
 // Example query
 var query = {
-  year: 2025
+  year: 2024
 };
 
 // Make the API request using callback

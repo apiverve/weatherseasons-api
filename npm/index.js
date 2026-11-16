@@ -30,7 +30,7 @@ class weatherseasonsWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/weatherseasons';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"year":{"type":"integer","required":false,"min":1900,"max":2100,"default":2025}};
+        this.validationRules = {"year":{"type":"integer","required":false,"min":1900,"max":2100}};
     }
 
     /**
