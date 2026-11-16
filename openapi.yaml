@@ -28,7 +28,9 @@ paths:
           schema:
             type: integer
           required: false
-          description: The year to get the dates of the solstice and equinox
+          description: >-
+            The year to get the dates of the solstice and equinox; defaults to
+            the current year (UTC)
           example: 2024
       responses:
         '200':
