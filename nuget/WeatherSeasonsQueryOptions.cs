@@ -11,7 +11,7 @@ namespace APIVerve.API.WeatherSeasons
     public class WeatherSeasonsQueryOptions
     {
         /// <summary>
-        /// The year to get the dates of the solstice and equinox
+        /// The year to get the dates of the solstice and equinox; defaults to the current year (UTC)
         /// </summary>
         [JsonProperty("year")]
         public int? Year { get; set; }
